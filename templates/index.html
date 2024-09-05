@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Портфолио</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+        <div class="header__logo">
+            <img src="../static/img/logo.jpg" alt="Logo" class="header__logo-img">
+        </div>
+        <nav class="header__nav main-nav">
+            <ul class="main-nav__list main-list">
+                <li class="main-list__item list-item">
+                    <a class="list-item__link" href="#home"><i class="fas fa-home"></i> ГЛАВНАЯ</a>
+                </li>
+                <li class="main-list__item list-item">
+                    <a class="list-item__link" href="#about"><i class="fas fa-user"></i> ОБО МНЕ</a>
+                </li>
+                <li class="main-list__item list-item">
+                    <a class="list-item__link" href="#skills"><i class="fas fa-cogs"></i> НАВЫКИ</a>
+                </li>
+                <li class="main-list__item list-item">
+                    <a class="list-item__link" href="#feedback"><i class="fas fa-comments"></i> ОБРАТНАЯ СВЯЗЬ</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <main class="main">
+        <!-- Секция превью -->
+        <section class="main__home home" id="home">
+            <h1 class="home__title">DimaLab</h1>
+            <div class="container">
+                <span class="text first-text">I'm a</span>
+                <span class="text sec-text"></span>
+            </div>
+            <div id="toast" class="toast">
+                    <span class="toast-icon"><i id="toast-icon" class="fas fa-info-circle"></i></span>
+                    <div class="toast-content">
+                        <span id="toast-message">Уведомление</span>
+                        <div id="toast-progress" class="toast-progress"></div>
+                    </div>
+            </div>
+        </section>
+        <!-- Секция с рассказом о себе -->
+        <section class="main__about about" id="about">
+            <h2 class="about__title"><i class="fas fa-user-circle"></i>ОБО МНЕ</h2>
+    <div class="about__info info-block">
+        <p class="info-block__text">
+            Я опытный программист с глубокими знаниями веб-технологий, языков Python и Java, а также большим опытом разработки игр с использованием Unity и Unreal Engine 5.
+            Я увлечен созданием качественных продуктов, будь то веб-сайты, настольные приложения или видеоигры.
+        </p>
+        <img class="info-block__img" src="../static/img/profile.png" alt="me" width="250" height="250" />
+    </div>
+</section>
+        <!-- Секция со скиллами -->
+        <section class="main__skills skills" id="skills">
+            <h2 class="skills__title"><i class="fas fa-tools"></i> МОИ НАВЫКИ</h2>
+            <form action="/" method="POST">
+                <ul class="skills__list skills-list">
+                    <li class="skills-list__skill skill">
+                        <img class="skill__img" src="../static/img/python.png" alt="python" width="150" height="150" />
+                        <span class="skill__info">
+                            1 - Опыт разработки веб-приложений и скриптов на Python. <br>
+                            2 - Знание фреймворков Flask. <br>
+                            3 - Навыки анализа данных и машинного обучения с использованием Python.
+                        </span>
+                        <input class="skill__button" type="submit" name="button_python" value="Показать проект">
+                    </li>
+                    <li class="skills-list__skill skill">
+                        <img class="skill__img" src="../static/img/discord.png" alt="discord" width="150" height="150" />
+                        <span class="skill__info">Разработка ботов для Discord с использованием Python</span>
+                        <input class="skill__button" type="submit" name="button_discord" value="Показать проект">
+                    </li>
+                    <li class="skills-list__skill skill">
+                        <img class="skill__img" src="../static/img/html.png" alt="html" width="150" height="150" />
+                        <span class="skill__info">Разработка простых веб-сайтов на HTML, CSS и JAVASCRIPT.</span>
+                        <input class="skill__button" type="submit" name="button_html" value="Показать проект">
+                    </li>
+                    <li class="skills-list__skill skill">
+                        <img class="skill__img" src="../static/img/db.webp" alt="SQL" width="150" height="150" />
+                        <span class="skill__info">Создание простых баз данных .</span>
+                        <input class="skill__button" type="submit" name="button_python" value="Показать проект" formaction="/?skill=python">
+                    </li>
+                </ul>
+            </form>
+
+                <div class="skills__project project" id="project-python" style="display: none;">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../static/img/python_project.png" alt="project" width="500">
+                <h3 class="project__title">Простой генератор паролей с пользовательскими настройками</h3>
+                <p class="project__description">
+                   Программа, которая генерирует безопасные пароли с возможностью настройки длины, использования специальных символов, чисел и букв.
+                </p>
+                <a class="project__link" href="https://github.com/LomakoDima/GeneratePasswords">Открыть на GitHub</a>
+            </div>
+            <div class="swiper-slide">
+                <img src="../static/img/another-python-project.png" alt="project" width="500">
+                <h3 class="project__title">...</h3>
+                <p class="project__description">...</p>
+                <a class="project__link" href="">Открыть на GitHub</a>
+            </div>
+            </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+
+        </section>
+        <!-- Секция с формой обратной связи -->
+        <section class="main__feedback feedback" id="feedback">
+            <h2 class="feedback__title"><i class="fas fa-envelope"></i> Обратная связь</h2>
+            <form id="feedback-form" action="" method="POST" class="feedback__form form">
+                <label for="name">
+                    <input type="text" class="form__input" name="name" id="name" placeholder="Введите ваше имя" required>
+                </label>
+                <label for="text">
+                    <textarea name="text" class="form__input" id="text" cols="70" rows="10" required placeholder="Комментарий"></textarea>
+                </label>
+                <button class="form__button" type="submit"><i class="fas fa-paper-plane"></i> ОТПРАВИТЬ</button>
+
+
+
+                 {% if feedbacks %}
+                <div class="feedback__comments">
+                    {% for feedback in feedbacks %}
+                       <div class="comment" style="display: none;"> <!-- Скрываем все отзывы по умолчанию -->
+                           <p class="comment__name">{{ feedback.name }}</p>
+                           <p class="comment__text">{{ feedback.comment }}</p>
+                       </div>
+                    {% endfor %}
+                </div>
+                <button class="form__button show-more-button" type="button">Показать больше</button> <!-- Кнопка "Показать больше" -->
+            {% endif %}
+            </form>
+        </section>
+    </main>
+    <!-- Подвал для ссылок на соц-сети -->
+    <footer class="footer">
+        <p class="footer__text">DimaLab. Все права защищены © 2024</p>
+         <div class="footer__social">
+             <a href="https://www.tiktok.com/@dimalab" target="_blank" class="social-icon">
+                 <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="https://www.youtube.com/@dimalab364" target="_blank" class="social-icon">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/dymok346/" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+             <a href="https://www.patreon.com/user/posts?u=83059125" target="_blank" class="social-icon">
+            <i class="fa-brands fa-patreon"></i>
+        </a>
+    </div>
+    <script>
+        const texts = ["ВЕБ РАЗРАБОТЧИК", "ПАЙТОН РАЗРАБОТЧИК", "ЯВА РАЗРАБОТЧИК", "РАЗРАБОТЧИК ИГР"];
+        let currentIndex = 0;
+        const textElement = document.querySelector(".sec-text");
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+    const showMoreButton = document.querySelector('.show-more-button');
+    const hiddenComments = document.querySelectorAll('.feedback__comments .comment');
+    let currentIndex = 0;
+    const commentsPerClick = 3; // Количество отзывов, которые будут показаны при каждом клике
+
+    // Изначально показываем первые несколько отзывов
+    const showComments = () => {
+        for (let i = currentIndex; i < currentIndex + commentsPerClick && i < hiddenComments.length; i++) {
+            hiddenComments[i].style.display = 'block';
+        }
+        currentIndex += commentsPerClick;
+
+        // Скрываем кнопку "Показать больше", если показаны все отзывы
+        if (currentIndex >= hiddenComments.length) {
+            showMoreButton.style.display = 'none';
+        }
+    };
+
+    // Слушатель события для кнопки "Показать больше"
+    showMoreButton.addEventListener('click', showComments);
+
+    // Показать первые несколько отзывов при загрузке страницы
+    showComments();
+});
+
+        window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 0) {
+        header.classList.add('sticky');
+
+        setTimeout(() => { // Задержка для анимации
+            header.classList.add('show');
+        }, 100); // Задержка в миллисекундах (можно настроить)
+    } else {
+        header.classList.remove('show');
+        setTimeout(() => { // Задержка для анимации
+            header.classList.remove('sticky');
+        }, 300); // Задержка в миллисекундах (можно настроить)
+    }
+});
+
+        window.addEventListener('scroll', function() {
+  const header = document.querySelector('.header');
+  const scrollPos = window.scrollY;
+
+  if (scrollPos
+ > 0) {
+    header.style.transform = 'translateY(0)'; // показываем шапку
+  } else {
+    header.style.transform = 'translateY(-100%)'; // скрываем шапку
+  }
+});
+
+      function showToast(message, type = "info", duration = 3000) {
+    const toast = document.getElementById("toast");
+    const toastMessage = document.getElementById("toast-message");
+    const toastProgress = document.getElementById("toast-progress");
+    const toastIcon = document.getElementById("toast-icon");
+
+    // Задание иконки в зависимости от типа уведомления
+    if (type === "success") {
+        toastIcon.className = "fas fa-check-circle";
+    } else if (type === "error") {
+        toastIcon.className = "fas fa-exclamation-circle";
+    } else if (type === "warning") {
+        toastIcon.className = "fas fa-exclamation-triangle";
+    } else {
+        toastIcon.className = "fas fa-info-circle";
+    }
+
+    toastMessage.textContent = message;
+    toast.classList.add("show");
+
+    toastProgress.style.width = '100%';
+
+    setTimeout(() => {
+        toastProgress.style.transition = `width ${duration}ms linear`;
+        toastProgress.style.width = '0%';
+    }, 10);
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+        setTimeout(() => {
+            toastProgress.style.width = '100%';
+            toastProgress.style.transition = '';
+        }, 500);
+    }, duration);
+}
+
+
+        const typeText = () => {
+            textElement.textContent = texts[currentIndex];
+            currentIndex = (currentIndex + 1) % texts.length;
+        };
+
+        const buttons = document.querySelectorAll('.skill__button');
+    buttons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent form submission
+
+            const projectId = `project-${button.name.replace('button_', '')}`;
+            const projectSlider = document.getElementById(projectId);
+            if (projectSlider.style.display === 'none') {
+                projectSlider.style.display = 'block';
+            } else {
+                projectSlider.style.display = 'none';
+            }
+
+            // Initialize Swiper after the slider is made visible
+            new Swiper(`#${projectId} .swiper`, {
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    });
+
+
+
+
+
+        typeText(); // Initialize with first text
+        setInterval(typeText, 4000); // Change text every 4 seconds
+        // showToast("Операция успешно выполнена!", "success", 4000);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+</body>
+</html>
+
+
